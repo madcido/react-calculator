@@ -20,7 +20,7 @@ export default class App extends React.Component {
     return (
       <div className='calculator'>
         <p className='brand'>Girly-Girl</p>
-        <Display show={this.state.next || this.state.total} />
+        <Display show={this.state.next || this.state.total || '0'} />
         <Panel handleClick={this.handleClick}/>
       </div>
     );

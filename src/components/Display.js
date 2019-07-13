@@ -1,11 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class Display extends React.Component {
   render() {
     return (
       <div className='display'>
-        <p>{this.props.show ? this.props.show : '0'}</p>
+        <p>{this.props.show}</p>
       </div>
     );
   }
 }
+
+Display.propTypes = {
+  show: PropTypes.string.isRequired,
+};
