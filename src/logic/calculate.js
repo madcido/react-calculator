@@ -3,10 +3,19 @@ import operate from './operate';
 const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 const operators = ['+', '-', 'x', '÷'];
 
-export default function calnextlate({next, total, operation}, button) {
+export default function calnextlate({next, total, operation, err}, button) {
+  if (err) {
+    next = null;
+    total = null;
+    operation = null;
+    err = false;
+  }
+
   if (numbers.includes(button)) {
     if (next && next !== '0') {
-      next += button;
+      if (next.length < 10) {
+        next += button;
+      }
     } else {
       next = button;
     }
@@ -64,5 +73,9 @@ export default function calnextlate({next, total, operation}, button) {
     }
   }
 
-  return {next, total, operation};
+  if (total && total.length > 10) {
+    err = true;
+  }
+
+  return {next, total, operation, err};
 }

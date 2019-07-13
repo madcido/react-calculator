@@ -10,6 +10,7 @@ export default class App extends React.Component {
       total: null,
       next: null,
       operation: null,
+      err: false,
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -20,7 +21,7 @@ export default class App extends React.Component {
     return (
       <div className='calculator'>
         <p className='brand'>Girly-Girl</p>
-        <Display show={this.state.next || this.state.total || '0'} />
+        <Display show={this.state.next || this.state.total || '0'} error={this.state.err} />
         <Panel handleClick={this.handleClick}/>
       </div>
     );

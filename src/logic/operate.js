@@ -13,11 +13,11 @@ export default function operate(str1, str2, operator) {
       return (num1.times(num2)).toString();
     case '÷':
       if (num2 == 0) {
-        return '0';
+        return 'invalid division by 0';
       } else {
         return (num1.div(num2)).toString();
       }
     default:
-    return undefined;
+    return 'operator not found';
   }
 }
