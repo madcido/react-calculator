@@ -26,7 +26,7 @@ $ webpack -v
 ##### Clone project
 ```
 $ git clone https://github.com/madcido/react-calculator.git
-$ cd ./js-todo
+$ cd ./react-calculator
 ```
 ##### Install dependencies
 ```
