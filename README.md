@@ -1,9 +1,3 @@
-Microverse - React project: Calculator
-
-Assignment: build a simple calculator that is not just fully-functional, but also beautiful and user-friendly
-
-
-
 # React Calculator
 Simple toy calculator not just fully-functional, but also beautiful and user-friendly, to practice React use
 
