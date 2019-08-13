@@ -2,15 +2,18 @@ Microverse - React project: Calculator
 
 Assignment: build a simple calculator that is not just fully-functional, but also beautiful and user-friendly
 
-Author: <a href="https://github.com/madcido">Fabio Carmo</a>
 
-Preview:
 
+# React Calculator
+Simple toy calculator not just fully-functional, but also beautiful and user-friendly, to practice React use
+
+## Live preview
 https://immense-cliffs-66075.herokuapp.com/
 
-## Installation Guide
-### Prerequisities
-System dependencies:
+## Getting Started
+These instructions will get you a copy of the project up and running on your local machine.
+
+### Prerequisites
 ```
 $ node -v
   v10.15.3
@@ -22,17 +25,20 @@ $ webpack -v
   4.34.0
 ```
 
-#### Local setup
-##### Clone project
+### Installing
+Clone the project:
 ```
 $ git clone https://github.com/madcido/react-calculator.git
 $ cd ./react-calculator
 ```
-##### Install dependencies
+Install dependencies:
 ```
 $ npm install
 ```
-##### Build project
+Build the project:
 ```
 $ npm start
 ```
+
+## Authors
+* **<a href="https://github.com/madcido">Fabio Carmo</a>**
